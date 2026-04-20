@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  width: 20%;
+  background-color: rgb(230, 230, 230);
+}
+
+button {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 400;
+  width: 100%;
+  height: 55px;
+  border: none;
+  background-color: rgb(230, 230, 230);
+  color: rgb(110, 110, 110);
+  padding: 0.3em;
+  cursor: pointer;
+}
+
+.grass:hover {
+  background-color: mediumseagreen;
+  color: whitesmoke;
+}
+
+.poison:hover {
+  background-color: mediumpurple;
+  color: whitesmoke;
+}
+
+.fire:hover {
+  background-color: goldenrod;
+  color: whitesmoke;
+}
+
+.flying:hover {
+  background-color: steelblue;
+  color: whitesmoke;
+}
+
+.water:hover {
+  background-color: dodgerblue;
+  color: whitesmoke;
+}
+
+.bug:hover {
+  background-color: brown;
+  color: whitesmoke;
+}
+
+.normal:hover {
+  background-color: gray;
+  color: whitesmoke;
+}
+
+.ground:hover {
+  background-color: peru;
+  color: whitesmoke;
+}
+
+.fairy:hover {
+  background-color: hotpink;
+  color: whitesmoke;
+}
+
+.fighting:hover {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.electric:hover {
+  background-color: hsl(51deg 73% 50%);
+  color: whitesmoke;
+}
+
+.psychic:hover {
+  background-color: orange;
+  color: whitesmoke;
+}
+
+.rock:hover {
+  background-color: dimgray;
+  color: whitesmoke;
+}
+
+.ice:hover {
+  background-color: darkcyan;
+  color: whitesmoke;
+}
+
+.dragon:hover {
+  background-color: mediumaquamarine;
+  color: whitesmoke;
+}
+
+.ghost:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.dark:hover {
+  background-color: slategray;
+  color: whitesmoke;
+}
+
+.steel:hover {
+  background-color: steelblue;
+  color: whitesmoke;
+}
+
+.all:hover {
+  background-color: dimgray;
+  color: whitesmoke;
+}
+
+main {
+  position: absolute;
+  left: 20%;
+  height: 100vh;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 1em;
+  overflow: scroll;
+  background-color: rgb(251, 251, 251);
+}
+
+.card-container {
+  background-color: rgb(244, 244, 244);
+  height: 29em;
+  width: 18em;
+  padding: 0.8em;
+  border: 1px solid gray;
+  border-radius: 1.5%;
+  color: rgb(110, 110, 110);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(230, 230, 230);
+  width: 99%;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.name-types {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.types {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10%;
+}
+
+.types p {
+  padding: 0.2em;
+  border-radius: 0.2em;
+}
+
+.stat-container {
+  height: 30%;
+  margin-top: 0.5em;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1em;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.stat:last-child {
+  border: none;
+}
+
+.type-grass {
+  color: whitesmoke;
+  background-color: mediumseagreen;
+}
+
+.type-poison {
+  color: whitesmoke;
+  background-color: mediumpurple;
+}
+
+.type-fire {
+  color: whitesmoke;
+  background-color: goldenrod;
+}
+
+.type-flying {
+  color: whitesmoke;
+  background-color: steelblue;
+}
+
+.type-water {
+  color: whitesmoke;
+  background-color: dodgerblue;
+}
+
+.type-bug {
+  color: whitesmoke;
+  background-color: brown;
+}
+
+.type-normal {
+  color: whitesmoke;
+  background-color: gray;
+}
+
+.type-ground {
+  color: whitesmoke;
+  background-color: peru;
+}
+
+.type-fairy {
+  color: whitesmoke;
+  background-color: hotpink;
+}
+
+.type-fighting {
+  color: whitesmoke;
+  background-color: crimson;
+}
+
+.type-electric {
+  color: whitesmoke;
+  background-color: hsl(51deg 73% 50%);
+}
+
+.type-psychic {
+  color: whitesmoke;
+  background-color: orange;
+}
+
+.type-rock {
+  color: whitesmoke;
+  background-color: dimgray;
+}
+
+.type-ice {
+  color: whitesmoke;
+  background-color: darkcyan;
+}
+
+.type-dragon {
+  color: whitesmoke;
+  background-color: mediumaquamarine;
+}
+
+.type-ghost {
+  color: whitesmoke;
+  background-color: black;
+}
+
+.type-dark {
+  color: whitesmoke;
+  background-color: slategray;
+}
+
+.type-steel {
+  color: whitesmoke;
+  background-color: steelblue;
+}
+
+.type-all {
+  color: whitesmoke;
+  background-color: dimgray;
+}
