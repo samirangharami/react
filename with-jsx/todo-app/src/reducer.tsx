@@ -1,8 +1,8 @@
-import type { State, Action } from "./types.tsx";
+import { type State, type Action, ACTIONS } from "./types.tsx";
 
 export const reducer = (state: State, action: Action): State => {
   switch (action.type) {
-    case "toggle-task":
+    case ACTIONS.TOGGLE_TASK:
       return {
         ...state,
         tasks: state.tasks.map((task) =>
@@ -10,13 +10,13 @@ export const reducer = (state: State, action: Action): State => {
         ),
       };
 
-    case "delete-task":
+    case ACTIONS.DELETE_TASK:
       return {
         ...state,
         tasks: state.tasks.filter((task) => task.id !== action.id),
       };
 
-    case "add-task":
+    case ACTIONS.ADD_TASK:
       return {
         nextId: state.nextId + 1,
         tasks: [
