@@ -4,7 +4,7 @@ const DataFetcher = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos/1")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((json) => setData(json));
   }, []);
@@ -12,7 +12,7 @@ const DataFetcher = () => {
   return (
     <div>
       <h3>Data:</h3>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <p>{JSON.stringify(data, null, 2)}</p>
     </div>
   );
 };
